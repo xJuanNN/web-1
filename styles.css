@@ -1,0 +1,310 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.contenedor{
+    background-color: black;
+}
+.main-menu{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.247);
+    z-index: 10;
+    text-align: right;
+}
+.main-menu_logo{
+    position: absolute;
+    text-align: left;
+    left: 2.5%;
+    width: 15%;
+}
+.boton-menu{
+    display: none;
+    font-size: 1.5em;
+    font-family: 'Goldman', cursive;
+}
+.main-menu_logo_img{
+    width: 70px;
+    height: 70px;
+}
+.main-menu_opciones{
+    height: 50px;
+    width: 80%;
+    list-style: none;
+    font-size: 3.5vmin;
+    font-family: 'Goldman', cursive;
+    padding: 10px;
+    margin-left: 20%;
+}
+.inicio:target,
+.sobre-mi:target,
+.proyectos:target,
+.contacto:target{
+   padding-top:75px ;
+}
+.enlaces{
+    color: white;
+}
+.enlaces:hover{
+    color:greenyellow;
+}
+.enlaces:active{
+    color: yellow;
+}
+
+.main-menu_opciones_inicio,
+.main-menu_opciones_sobre,
+.main-menu_opciones_proyectos,
+.main-menu_opciones_contacto{
+    display: inline-block;
+    margin: 0px 10px;
+
+}
+
+.portada{
+    background-image: url(src/imgs/portadas/josh-hild-rMkprNMH4NU-unsplash.jpg);
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+.titulo{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 10vmin;
+    top: 5%;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+.titulo1{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 14vmin;
+    margin: auto auto;
+    color: black; 
+    top: 35%;
+    -webkit-text-stroke: 1px white;
+}
+.sobre-mi,
+.proyectos,
+.contacto{
+    width: 100%;
+    color: white;
+}
+.sobre-mi{
+    width: 100%;
+    min-height: 600px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: rgb(48, 48, 48);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding:20px;
+    top: 0;
+    left: 0;
+}
+.sobre-mi_principal{
+    width: 65%;
+}
+.sobre-mi_img{
+    font-size: 3em;
+    width: 50px;
+    height: 50px;
+}
+
+.sobre-mi_titulo{
+    margin-left:10px ;
+    font-size: 2em;
+}
+.sobre-mi_nombre{
+    margin-top: 25px;
+    margin-left:10px ;
+    font-size: 4em;
+}
+h3 span{
+    color: black;
+    font-weight: 300;
+}
+.sobre-mi_profesion{
+    display: inline-block;
+    margin-left:10px ;
+    font-size: 2.3em;
+}
+
+.sobre-mi_parrafo{
+    margin-top: 50px;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+.lenguajes{
+    padding-top: 20%;
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    top: 0;
+    right: 0;
+}
+.lenguajes_js,
+.lenguajes_css,
+.lenguajes_java,
+.lenguajes_react,
+.lenguajes_php,
+.lenguajes_html{
+    margin: 25px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.proyectos{
+    position: relative;
+    background-image: url(src/imgs/portadas/gaetan-othenin-girard-mGfUWmCftzg-unsplash.jpg);
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    list-style: none;
+}
+.proyectos_titulo{
+    font-size: 4em;
+    text-align: center;
+    color: black;
+}
+.proyectos_lista{
+    list-style: none;
+}
+.contacto{
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: rgb(28, 28, 28);
+}
+.contacto_titulo{
+    font-size: 2.5em;
+}
+.entradas{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.entradas_nombre,
+.entradas_email,
+.entradas_telefono{
+    background-color: rgb(38, 38, 38);
+    margin-top: 10px;
+    width: 60%;
+    height: 40px; 
+    color: white;
+    font-size: 20px;
+}
+.entradas_mensaje{
+    background-color: rgb(38, 38, 38);
+    margin-top:10px ;
+    width: 60%;
+    height: 120px;
+    color: white;
+    font-size: 20px;
+}
+.entradas_nombre::placeholder,
+.entradas_email::placeholder,
+.entradas_telefono::placeholder,
+.entradas_mensaje::placeholder{
+   color: white;
+   font-size: 20px;
+}
+.entradas_enviar{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 20%;
+    height: 40px;
+    background-color: rgb(18, 18, 18);
+    font-size: 2.5vmin;
+    color: white;
+    border-radius: 5px;
+}
+.entradas_enviar:hover{
+    border: 1px white solid;
+}
+.entradas_enviar:active{
+    transform: scale(0.9);
+}
+.menu1{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    text-align: center;
+}
+.menu1_opciones{
+    list-style: none;
+    display: inline-flex;
+    text-align: right;
+}
+
+.menu1_opciones_redesf_img,
+.menu1_opciones_redesw_img,
+.menu1_opciones_redesy_img,
+.menu1_opciones_redesi_img{
+    margin: 5px 10px;
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width:768px){
+    .main-menu_logo_img{
+        width: 40px;
+        height: 40px;
+    }
+    .main-menu_opciones{
+        margin-left: 0;
+        display: inline;
+        font-size: 3.5vmin;
+    }
+    .main-menu_opciones_inicio,
+    .main-menu_opciones_sobre,
+    .main-menu_opciones_proyectos,
+    .main-menu_opciones_contacto{
+        margin: 0px 1px;
+    }
+    .portada{
+        height: 150px;
+    }
+    .sobre-mi_principal{
+        width: 100%;
+        padding: 1%;
+    }
+    .sobre-mi_titulo{
+        margin-left:10px ;
+        font-size: 1.5em;
+    }
+    .sobre-mi_nombre{
+        margin-top: 25px;
+        margin-left:10px ;
+        font-size: 2em;
+    }
+    .sobre-mi_profesion{
+        display: inline-block;
+        margin-left:10px ;
+        font-size: 1.5em;
+    }
+    .lenguajes{
+        display: inline-block;
+        width: 100%;
+        position: relative;
+    }
+    .lenguajes_js,
+    .lenguajes_css,
+    .lenguajes_java,
+    .lenguajes_react,
+    .lenguajes_php,
+    .lenguajes_html{
+        width:50px;
+        height: 50px;
+    }
+}
